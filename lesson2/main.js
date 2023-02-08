@@ -6,8 +6,7 @@
 
 
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
-let arr;
-arr = [10, -10, true, false, 'string', 1000, 0, '20', 50, -18];
+let arr = [10, -10, true, false, 'string', 1000, 0, '20', 50, -18];
 console.log(arr[0]);
 console.log(arr[1]);
 console.log(arr[2]);
@@ -21,26 +20,26 @@ console.log(arr[9]);
 
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
-let YouAreSpecial = {
+let youAreSpecial = {
     title: 'You Are Special',
     pageCount: 32,
     genre: 'Fiction'
 };
-console.log(YouAreSpecial);
+console.log(youAreSpecial);
 
-let Boundaries = {
+let boundaries = {
     title: 'Boundaries',
     pageCount: 320,
     genre: 'Fiction'
 };
-console.log(Boundaries);
+console.log(boundaries);
 
-let CounterfeitGods = {
+let counterfeitGods = {
     title: 'Counterfeit Gods',
     pageCount: 300,
     genre: 'Foction'
 };
-console.log(CounterfeitGods);
+console.log(counterfeitGods);
 
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
@@ -49,8 +48,8 @@ let book1 = {
     pageCount: 32,
     genre: 'Fiction',
     autor1: [
-        name = 'Max Lucado' ,
-        age = 68
+        { name: 'SAsha'},
+        {age : 78 }
     ]
 };
 
@@ -62,8 +61,8 @@ let book2 = {
     pageCount: 320,
     genre: 'Fiction',
     autor2: [
-        name = 'Henry Cloud' ,
-        age = 66
+        { name: 'Henry Cloud'} ,
+        { age: 66}
     ]
 };
 console.log(book2);
@@ -73,8 +72,8 @@ let book3 = {
     pageCount: 300,
     genre: 'Foction',
     autor3: [
-        name = 'Timothy Keller' ,
-        age = 72
+        {name: 'Timothy Keller'} ,
+        {age: 72}
     ]
 };
 console.log(book3);
@@ -193,6 +192,8 @@ let schedule = prompt('Enter number');
      case '7' :
          document.write('Sunday - you go to Church');
          break;
+     default :
+         console.log('??????');
 
  }
 
