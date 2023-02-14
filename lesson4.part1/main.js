@@ -34,13 +34,14 @@
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
 // ];
+//
 // function foo(arr){
 //     for (const user of arr) {
 //         console.log(user);
 //     }
 // }
+//
 // foo(users);
-
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
@@ -68,17 +69,17 @@
 
 // function list(text,num) {
 //     num = 5;
+//     document.write('<ul>')
 //     for (let i = 0; i < num; i++) {
 //         document.write(`<div>
-//     <ul>
 //         <li>${text}</li>
-//      </ul>
 //  </div>`)
 //     }
+//     document.write('</ul>')
 // }
 // list(`smile`);
-
-
+//
+//
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
@@ -154,43 +155,26 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
 
 // function exchange(sumUAH,currencyValues,exchangeCurrency){
-//     let tempValue = 0;
-//     for (const sumUAHElement of currencyValues) {
-//         if (exchangeCurrency === sumUAHElement.currency ){
-//             tempValue = sumUAHElement.value
+//
+//     for (const item of currencyValues) {
+//         if (exchangeCurrency === item.currency ){
+//             return sumUAH / item.value;
 //         }
 //     }
-//     return sumUAH/tempValue;
-//
 // }
 //
-// console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD'));
+// console.log(exchange(
+//     10000,
+//     [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}],
+//     'USD'));
+
+
+
 
 
 
